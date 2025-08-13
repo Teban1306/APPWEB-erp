@@ -114,8 +114,19 @@ TEMPLATES = [
 WSGI_APPLICATION = 'BackWeb.wsgi.application'
 
 # Database - Solo Supabase/PostgreSQL
+# Obtener DATABASE_URL con manejo de errores
+database_url = env('DATABASE_URL', default='')
+print(f"DATABASE_URL raw: '{database_url}'")
+print(f"DATABASE_URL length: {len(database_url)}")
+
+if not database_url or database_url.strip() == '':
+    print("DATABASE_URL está vacía, usando valor por defecto")
+    database_url = 'postgres://postgres.tjaialnqzdhggmycexwz:mataronakeny@aws-0-us-east-2.pooler.supabase.com:5432/postgres?sslmode=require'
+else:
+    print(f"DATABASE_URL encontrada: {database_url[:50]}...")
+
 DATABASES = {
-    'default': dj_database_url.parse(env('DATABASE_URL', default='postgres://postgres.tjaialnqzdhggmycexwz:mataronakeny@aws-0-us-east-2.pooler.supabase.com:5432/postgres?sslmode=require&connect_timeout=60'))
+    'default': dj_database_url.parse(database_url)
 }
 
 # Password validation

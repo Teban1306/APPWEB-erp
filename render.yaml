@@ -17,9 +17,9 @@ services:
       - key: ALLOWED_HOSTS
         value: "app-web-backend.onrender.com,localhost,127.0.0.1"
       - key: DATABASE_URL
-         value: "postgres://postgres.tjaialnqzdhggmycexwz:mataronakeny@aws-0-us-east-2.pooler.supabase.com:5432/postgres?sslmode=require&connect_timeout=60"
+        value: "postgres://postgres.tjaialnqzdhggmycexwz:mataronakeny@aws-0-us-east-2.pooler.supabase.com:5432/postgres?sslmode=require"
       - key: SUPABASE_URL
         value: "https://tjaialnqzdhggmycexwz.supabase.co"
       - key: SUPABASE_KEY
-         value: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRqYWlhbG5xemRoZ2dteWNleHd6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzU1NzY5NzQsImV4cCI6MjA1MTE1Mjk3NH0.temp_key"
+        value: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRqYWlhbG5xemRoZ2dteWNleHd6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzU1NzY5NzQsImV4cCI6MjA1MTE1Mjk3NH0.temp_key"
     healthCheckPath: "/api/"
