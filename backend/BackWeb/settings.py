@@ -172,7 +172,7 @@ if 'whitenoise.middleware.WhiteNoiseMiddleware' not in MIDDLEWARE:
 # Configuración de hosts permitidos para producción
 if not DEBUG:
     ALLOWED_HOSTS = [
-        'ERP-TIKNO-backend.onrender.com',  # URL de Render actualizada
+        'BackWeb-backend.onrender.com',  # URL de Render actualizada
         '.onrender.com',  # Permite subdominios de Render
         'localhost',
         '127.0.0.1',
