@@ -1,11 +1,13 @@
 from rest_framework import viewsets, permissions
 from rest_framework.response import Response
 from rest_framework import status
-from rest_framework.decorators import action
+from rest_framework.decorators import action, api_view, permission_classes
 from django.contrib.auth import get_user_model
 from rest_framework_simplejwt.views import TokenObtainPairView
 from rest_framework.generics import CreateAPIView, RetrieveUpdateAPIView, ListAPIView, RetrieveUpdateDestroyAPIView
 from django.db import transaction
+from django.http import JsonResponse
+from datetime import datetime
 from .serializers import (
     UsuarioSerializer, 
     CustomTokenObtainPairSerializer, 
@@ -641,3 +643,55 @@ class CarritoViewSet(viewsets.ModelViewSet):
     def destroy(self, request, *args, **kwargs):
         """Eliminar producto del carrito"""
         return super().destroy(request, *args, **kwargs)
+
+
+@api_view(['GET'])
+@permission_classes([permissions.AllowAny])
+def api_welcome(request):
+    """Vista de bienvenida para la raíz de la API"""
+    welcome_data = {
+        'message': '¡Bienvenido a ERP TIKNO API! 🚀',
+        'description': 'Sistema de gestión empresarial completo con funcionalidades de inventario, ventas y administración de usuarios.',
+        'version': '1.0.0',
+        'status': 'active',
+        'timestamp': datetime.now().isoformat(),
+        'endpoints': {
+            'admin': '/admin/',
+            'api_root': '/api/',
+            'authentication': {
+                'login': '/api/auth/login/',
+                'register': '/api/auth/register/',
+                'profile': '/api/auth/profile/'
+            },
+            'resources': {
+                'usuarios': '/api/usuarios/',
+                'clientes': '/api/clientes/',
+                'productos': '/api/productos/',
+                'categorias': '/api/categorias/',
+                'ventas': '/api/ventas/',
+                'carrito': '/api/carrito/'
+            }
+        },
+        'features': [
+            'Gestión de usuarios con roles y permisos',
+            'Sistema de autenticación JWT',
+            'Administración de productos e inventario',
+            'Gestión de clientes',
+            'Sistema de ventas y facturación',
+            'Carrito de compras',
+            'Categorización de productos',
+            'Control de stock automático'
+        ],
+        'tech_stack': {
+            'backend': 'Django REST Framework',
+            'database': 'PostgreSQL (Supabase)',
+            'authentication': 'JWT',
+            'deployment': 'Render'
+        },
+        'contact': {
+            'developer': 'ERP TIKNO Team',
+            'support': 'Contacta al administrador del sistema'
+        }
+    }
+    
+    return JsonResponse(welcome_data, json_dumps_params={'indent': 2})
