@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: app-web-backend
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: "cd backend && pip install -r requirements.txt && python manage.py collectstatic --no-input"
+    startCommand: "cd backend && gunicorn BackWeb.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.0"
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALLOWED_HOSTS
+        value: "app-web-backend.onrender.com,localhost,127.0.0.1"
+    healthCheckPath: "/api/"
+    
+  - type: pserv
+    name: app-web-db
+    env: postgresql
+    plan: free
+    region: oregon
+    databaseName: app_web_db
+    databaseUser: app_web_user
