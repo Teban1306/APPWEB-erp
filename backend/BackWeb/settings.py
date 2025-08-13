@@ -115,7 +115,7 @@ WSGI_APPLICATION = 'BackWeb.wsgi.application'
 
 # Database - Solo Supabase/PostgreSQL
 DATABASES = {
-    'default': dj_database_url.parse(env('DATABASE_URL'))
+    'default': dj_database_url.parse(env('DATABASE_URL', default='postgres://postgres.tjaialnqzdhggmycexwz:mataronakeny@aws-0-us-east-2.pooler.supabase.com:5432/postgres?sslmode=require&connect_timeout=60'))
 }
 
 # Password validation
