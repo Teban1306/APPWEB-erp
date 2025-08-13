@@ -21,7 +21,7 @@ export default function Auth() {
     setSuccess(null)
     try {
       setLoading(true)
-      const response = await fetch('http://localhost:8000/api/auth/login/', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:8000/api'}/auth/login/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ export default function Auth() {
     setSuccess(null)
     try {
       setLoading(true)
-      const response = await fetch('http://localhost:8000/api/auth/registro/', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:8000/api'}/auth/registro/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
