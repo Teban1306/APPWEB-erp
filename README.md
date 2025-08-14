@@ -1,29 +1,29 @@
-# 🛒 Sistema de Gestión Comercial
+# Sistema de Gestión Comercial
 
-## 🚀 **VERSIÓN 2.0.0 - CLOUDINARY & ANIMATIONS UPDATE**
+## VERSIÓN 2.0.0 - CLOUDINARY & ANIMATIONS UPDATE
 
-### 📋 **DOCUMENTACIÓN DE LA VERSIÓN:**
-- 🏷️ [**VERSION.md**](./VERSION.md) - Información detallada de la versión actual
-- 📋 [**CHANGELOG.md**](./CHANGELOG.md) - Registro completo de cambios y mejoras
-- 📖 [**Frontend README**](./frontend/README.md) - Documentación específica del frontend
+### DOCUMENTACIÓN DE LA VERSIÓN:
+- [**VERSION.md**](./VERSION.md) - Información detallada de la versión actual
+- [**CHANGELOG.md**](./CHANGELOG.md) - Registro completo de cambios y mejoras
+- [**Frontend README**](./frontend/README.md) - Documentación específica del frontend
 
 ---
 
-## 🆕 **VERSIÓN 2.0.0 - NUEVAS CARACTERÍSTICAS**
+## VERSIÓN 2.0.0 - NUEVAS CARACTERÍSTICAS
 
-### ✨ **NOVEDADES DE ESTA VERSIÓN:**
-- 🖼️ **Gestión de imágenes con Cloudinary** - Subida y almacenamiento de imágenes de productos
-- 🎨 **Animaciones mejoradas** - Interfaz más fluida con Framer Motion
-- 🔐 **Sistema de roles avanzado** - Control granular de permisos por usuario
-- 📱 **Interfaz optimizada** - Mejor experiencia de usuario y diseño responsivo
-- 🛡️ **Validaciones mejoradas** - Mayor seguridad en formularios y datos
-- 🚀 **Rendimiento optimizado** - Carga más rápida y eficiente
+### NOVEDADES DE ESTA VERSIÓN:
+- **Gestión de imágenes con Cloudinary** - Subida y almacenamiento de imágenes de productos
+- **Animaciones mejoradas** - Interfaz más fluida con Framer Motion
+- **Sistema de roles avanzado** - Control granular de permisos por usuario
+- **Interfaz optimizada** - Mejor experiencia de usuario y diseño responsivo
+- **Validaciones mejoradas** - Mayor seguridad en formularios y datos
+- **Rendimiento optimizado** - Carga más rápida y eficiente
 
 ---
 
 Un proyecto full stack moderno que combina Django como backend y React con Vite como frontend.
 
-## 🚀 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 ### Backend
 - **Django 5.2.4** - Framework web de Python
@@ -31,9 +31,9 @@ Un proyecto full stack moderno que combina Django como backend y React con Vite 
 - **Simple JWT** - Autenticación basada en tokens JWT
 - **SQLite** - Base de datos (por defecto)
 - **Python** - Lenguaje de programación
-- 🆕 **Pillow** - Procesamiento de imágenes
-- 🆕 **Django Filter** - Filtrado avanzado de datos
-- 🆕 **Django Extensions** - Utilidades de desarrollo
+- **Pillow** - Procesamiento de imágenes
+- **Django Filter** - Filtrado avanzado de datos
+- **Django Extensions** - Utilidades de desarrollo
 
 ### Frontend
 - **React 19.1.0** - Biblioteca de JavaScript para interfaces de usuario
@@ -45,17 +45,17 @@ Un proyecto full stack moderno que combina Django como backend y React con Vite 
 - **Axios 1.6.7** - Cliente HTTP para peticiones API
 - **Framer Motion 12.23.0** - Biblioteca de animaciones
 - **ESLint** - Linter para JavaScript/React
-- 🆕 **Cloudinary React** - Gestión de imágenes en la nube
-- 🆕 **Cloudinary URL-Gen** - Generación de URLs optimizadas
-- 🆕 **SHA.js** - Funciones de hash criptográficas
-- 🆕 **Supabase** - Backend como servicio
+- **Cloudinary React** - Gestión de imágenes en la nube
+- **Cloudinary URL-Gen** - Generación de URLs optimizadas
+- **SHA.js** - Funciones de hash criptográficas
+- **Supabase** - Backend como servicio
 
 ### Herramientas de Desarrollo
 - **pnpm** - Gestor de paquetes para el frontend
 - **pip** - Gestor de paquetes para Python
 - **Git** - Control de versiones
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 APP WEB/
@@ -101,7 +101,7 @@ APP WEB/
     └── eslint.config.js    # Configuración de ESLint
 ```
 
-## 🛠️ Instalación y Configuración
+## Instalación y Configuración
 
 ### Prerrequisitos
 
@@ -153,7 +153,7 @@ cd ../frontend
 pnpm install
 ```
 
-## 🚀 Ejecución del Proyecto
+## Ejecución del Proyecto
 
 ### Ejecutar el Backend
 
@@ -179,7 +179,7 @@ pnpm run dev
 
 El frontend estará disponible en: `http://localhost:5173`
 
-## 📝 Scripts Disponibles
+## Scripts Disponibles
 
 ### Backend (Django)
 - `python manage.py runserver` - Ejecutar el servidor de desarrollo
@@ -194,7 +194,7 @@ El frontend estará disponible en: `http://localhost:5173`
 - `pnpm run preview` - Previsualizar build de producción
 - `pnpm run lint` - Ejecutar linter
 
-## 🔑 Autenticación
+## Autenticación
 
 El proyecto utiliza autenticación basada en JWT (JSON Web Tokens):
 
@@ -225,7 +225,7 @@ El proyecto utiliza autenticación basada en JWT (JSON Web Tokens):
   }
   ```
 
-## 🔌 Endpoints de API
+## Endpoints de API
 
 ### Gestión de Usuarios
 - `GET /api/usuarios/` - Listar usuarios
@@ -272,7 +272,7 @@ Los tokens JWT se almacenan en el localStorage:
 - `access_token`: Token de acceso para autenticación
 - `refresh_token`: Token para renovar el acceso
 
-## 🏪 Funcionalidades del Sistema
+## Funcionalidades del Sistema
 
 ### Gestión de Usuarios
 - Registro y autenticación de usuarios
@@ -291,13 +291,13 @@ Los tokens JWT se almacenan en el localStorage:
 - Campos: nombre, descripción, precio, stock, categoría, imagen
 - Categorización de productos
 - Control de inventario con validación de stock
-- 🆕 **Gestión avanzada de imágenes con Cloudinary**
+- **Gestión avanzada de imágenes con Cloudinary**
   - Subida directa de imágenes
   - Optimización automática de imágenes
   - URLs seguras y optimizadas
   - Validación de tipos y tamaños de archivo
 - Filtrado por categoría y búsqueda por nombre
-- 🆕 **Interfaz mejorada con animaciones fluidas**
+- **Interfaz mejorada con animaciones fluidas**
 
 ### Sistema de Ventas
 - **Carrito de compras inteligente**
@@ -328,30 +328,30 @@ Los tokens JWT se almacenan en el localStorage:
 - **Manejo de errores**: Mensajes informativos para el usuario
 - **Optimización de rendimiento**: Carga eficiente de datos
 
-### 🆕 **NUEVAS CARACTERÍSTICAS TÉCNICAS - V2.0.0**
-- **🖼️ Integración con Cloudinary**:
+### NUEVAS CARACTERÍSTICAS TÉCNICAS - V2.0.0
+- **Integración con Cloudinary**:
   - Subida segura de imágenes
   - Transformaciones automáticas
   - CDN global para carga rápida
   - Validación de archivos del lado cliente y servidor
-- **🎨 Animaciones con Framer Motion**:
+- **Animaciones con Framer Motion**:
   - Transiciones suaves entre páginas
   - Efectos de entrada y salida
   - Animaciones de carga y estados
-- **🔐 Sistema de roles mejorado**:
+- **Sistema de roles mejorado**:
   - Control granular de permisos
   - Validación de acceso por componente
   - Diferentes niveles de usuario
-- **🛡️ Validaciones avanzadas**:
+- **Validaciones avanzadas**:
   - Validación de tipos de archivo
   - Límites de tamaño de imagen
   - Sanitización de datos de entrada
-- **⚡ Optimizaciones de rendimiento**:
+- **Optimizaciones de rendimiento**:
   - Lazy loading de componentes
   - Memoización de funciones costosas
   - Optimización de consultas de base de datos
 
-## 🔧 Configuración Adicional
+## Configuración Adicional
 
 ### Variables de Entorno
 
@@ -376,7 +376,7 @@ El proyecto usa SQLite por defecto. Para usar PostgreSQL o MySQL:
 
 2. Actualiza la configuración en `backend/BackWeb/settings.py`
 
-## 🌐 URLs Importantes
+## URLs Importantes
 
 ### Frontend (http://localhost:5173)
 - **Login**: `/login`
@@ -393,7 +393,7 @@ El proyecto usa SQLite por defecto. Para usar PostgreSQL o MySQL:
 - **Admin de Django**: `/admin/`
 - **Documentación API**: `/api/schema/swagger-ui/` (si está configurado)
 
-## 🤝 Contribución
+## Contribución
 
 1. Fork el proyecto
 2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
@@ -401,15 +401,14 @@ El proyecto usa SQLite por defecto. Para usar PostgreSQL o MySQL:
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
 
-## 📞 Soporte
+## Soporte
 
 Si tienes alguna pregunta o problema, por favor abre un issue en el repositorio.
 
 ---
 
-**¡Feliz desarrollo! 🎉**
-Elimina todo emoji
+**¡Feliz desarrollo!**
