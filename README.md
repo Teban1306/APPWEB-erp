@@ -8,9 +8,7 @@
 - [**Frontend README**](./frontend/README.md) - Documentación específica del frontend
 
 ---
-DEPLOY:
-BACKEND:https://erp-tikno.onrender.com/admin
-FRONTEND:https://erptikno-flame.vercel.app/login
+
 ## VERSIÓN 2.0.0 - NUEVAS CARACTERÍSTICAS
 
 ### NOVEDADES DE ESTA VERSIÓN:
@@ -24,6 +22,25 @@ FRONTEND:https://erptikno-flame.vercel.app/login
 ---
 
 Un proyecto full stack moderno que combina Django como backend y React con Vite como frontend.
+
+## 🚀 Aplicación en Producción
+
+### Enlaces de Acceso Directo
+
+| Servicio | URL | Descripción |
+|----------|-----|-------------|
+| **Frontend** | [🌐 erptikno-flame.vercel.app](https://erptikno-flame.vercel.app/login) | Interfaz de usuario principal |
+| **Backend API** | [⚙️ erp-tikno.onrender.com](https://erp-tikno.onrender.com/admin) | Panel de administración Django |
+
+### Información de Despliegue
+
+- **Frontend**: Desplegado en **Vercel** con integración continua desde GitHub
+- **Backend**: Desplegado en **Render** 
+- **CDN**: Imágenes servidas a través de **Cloudinary**
+- **Dominio**: Configurado con HTTPS y certificados SSL automáticos
+- **SUPABASE**: SUPABASE con base de datos PostgreSQL
+
+---
 
 ## Tecnologías Utilizadas
 
