@@ -8,7 +8,9 @@
 - [**Frontend README**](./frontend/README.md) - Documentación específica del frontend
 
 ---
-
+DEPLOY:
+BACKEND:https://erp-tikno.onrender.com/admin
+FRONTEND:https://erptikno-flame.vercel.app/login
 ## VERSIÓN 2.0.0 - NUEVAS CARACTERÍSTICAS
 
 ### NOVEDADES DE ESTA VERSIÓN:
